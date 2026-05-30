@@ -427,7 +427,7 @@
       &copy; <span id="current-year">2026</span> Song List Database. All rights
       reserved.
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/wanakana@5.3.1/wanakana.min.js"></script>
     <script>
       const GAS_URL = window.AppConfig.gasUrl;
 
@@ -837,16 +837,22 @@
       }
 
 function isFuzzyMatch(text, query) {
-        if (!query) return true;
-        text = text.toLowerCase();
-        query = query.toLowerCase().replace(/\s+/g, "");
-        let i = 0,
-          j = 0;
-        while (i < text.length && j < query.length) {
-          if (text[i] === query[j]) j++;
+      if (!query) return true;
+      
+      // 1. 將查詢字串轉為平假名 (例如 "ka" -> "か", "a" -> "あ")
+      // WanaKana 可以判斷輸入的是不是羅馬拼音並轉換
+      const normalizedQuery = wanakana.toHiragana(query).toLowerCase();
+      
+      // 2. 將目標文字也轉為平假名，確保比對基準一致
+      const normalizedText = wanakana.toHiragana(text).toLowerCase();
+      
+      // 3. 執行模糊比對
+      let i = 0, j = 0;
+      while (i < normalizedText.length && j < normalizedQuery.length) {
+          if (normalizedText[i] === normalizedQuery[j]) j++;
           i++;
-        }
-        return j === normalizedQuery.length;
+      }
+      return j === normalizedQuery.length;
     }
 
       function triggerSearch(updateGrid = true) {
