@@ -85,3 +85,16 @@
         color: var(--text-sub);
         font-size: 0.9em;
       }
+
+          /* 新增：用於移除內聯樣式的類別 */
+      .menu-toggle {
+        border: none !important;
+        padding: 4px !important;
+      }
+      .menu-icon {
+        font-size: 28px !important;
+      }
+      .header-title {
+        margin: 0;
+        font-size: 1.8em;
+      }
