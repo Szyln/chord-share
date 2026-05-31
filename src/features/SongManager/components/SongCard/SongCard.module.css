@@ -1,0 +1,126 @@
+.songList {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.songItem {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.songItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.songTitleWrapper {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.songLink {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.15em;
+  line-height: 1.3;
+  word-break: break-word;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.songMetaRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Badges */
+.keyBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 10px;
+  border: 2px solid var(--key-border);
+  border-radius: var(--radius-m);
+  font-size: 0.9em;
+  font-weight: 900;
+  color: var(--key-text);
+  background-color: var(--key-bg);
+  box-shadow: var(--shadow-sm);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: var(--radius-l);
+  font-size: 0.8em;
+  font-weight: bold;
+  white-space: nowrap;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.badgeGenre {
+  background-color: var(--badge-bg);
+  color: var(--text-main);
+}
+
+.badgeCompletionHigh {
+  background-color: var(--completion-high-bg);
+  color: var(--completion-high-text);
+  border-color: var(--completion-high-text);
+}
+
+.badgeCompletionMedium {
+  background-color: var(--completion-medium-bg);
+  color: var(--completion-medium-text);
+  border-color: var(--completion-medium-text);
+}
+
+.badgeCompletionLow {
+  background-color: var(--completion-low-bg);
+  color: var(--completion-low-text);
+  border-color: var(--completion-low-text);
+}
+
+/* Buttons */
+.btnGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.iconBtn {
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: var(--radius-m);
+  font-size: 12px;
+  font-weight: bold;
+  background-color: var(--btn-light-bg);
+  color: var(--btn-light-text);
+  border: 1px solid var(--btn-light-border);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+.iconBtn:hover {
+  background-color: var(--border-color);
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

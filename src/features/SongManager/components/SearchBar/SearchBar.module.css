@@ -1,0 +1,83 @@
+.searchBarContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.searchWrapper {
+  position: relative;
+  flex: 1;
+  min-width: 250px;
+}
+
+.searchInput {
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-m);
+  box-sizing: border-box;
+  background-color: var(--card-bg);
+  color: var(--text-main);
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.candidatesDropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-m);
+  max-height: 250px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: var(--shadow-md);
+  display: none;
+}
+
+.candidatesDropdown.show {
+  display: block;
+}
+
+.candidateItem {
+  padding: 10px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.candidateItem:last-child {
+  border-bottom: none;
+}
+
+.candidateItem:hover {
+  background: var(--hover-bg);
+}
+
+.viewToggleBtn {
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: var(--radius-m);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+}
+
+.viewToggleBtn:hover {
+  background: var(--hover-bg);
+}

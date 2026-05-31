@@ -1,0 +1,102 @@
+.contentWrapper {
+  flex: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 40px;
+}
+.docCard {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+.docHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 12px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-size: 1.5em;
+}
+
+.contentWrapper h3 {
+  color: var(--text-main);
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.contentWrapper p,
+.contentWrapper li {
+  line-height: 1.7;
+  color: var(--text-sub);
+  margin-bottom: 12px;
+  font-size: 1.05em;
+}
+.contentWrapper ul,
+.contentWrapper ol {
+  padding-left: 24px;
+  margin-bottom: 15px;
+  color: var(--text-sub);
+  line-height: 1.7;
+  font-size: 1.05em;
+}
+.contentWrapper a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+.contentWrapper a:hover {
+  text-decoration: underline;
+}
+
+.contentWrapper strong {
+  color: var(--text-main);
+}
+.contentWrapper code {
+  background-color: var(--code-bg);
+  color: var(--code-text);
+  padding: 4px 8px;
+  border-radius: var(--radius-s);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin: 0 2px;
+}
+.highlightBox {
+  background-color: var(--highlight-bg);
+  padding: 15px 20px;
+  border-left: 4px solid var(--primary-color);
+  border-radius: var(--radius-m);
+  margin: 20px 0;
+}
+.highlightBox p {
+  margin: 0;
+  color: var(--text-main);
+}
+.safeNote {
+  background-color: var(--safe-bg);
+  border-left-color: var(--safe-border);
+}
+
+.docImage {
+  margin: 20px 0;
+  text-align: center;
+}
+.docImage img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-m);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}

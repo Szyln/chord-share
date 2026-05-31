@@ -1,0 +1,35 @@
+.container {
+  padding: 24px;
+  font-family: sans-serif;
+}
+
+.backLink {
+  display: inline-block;
+  margin-top: 16px;
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+.statusText {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.errorBox {
+  padding: 16px;
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #f87171;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.successText {
+  margin-top: 16px;
+  color: #166534;
+  font-weight: bold;
+}

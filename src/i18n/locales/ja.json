@@ -1,0 +1,45 @@
+{
+  "loading": "読み込み中...",
+  "error": {
+    "fetchFailed": "楽曲データの取得に失敗しました。ネットワーク接続を確認するか、後でお試しください。"
+  },
+  "list": {
+    "title": "曲一覧",
+    "viewing": "現在表示中の User ID：",
+    "back": "← ホームに戻る",
+    "songsCount": "全 {{count}} 曲を読み込みました"
+  },
+  "sidebar": {
+    "menuHome": "レパートリー検索",
+    "menuTool": "行数表示ツール",
+    "playerCategory": "Player",
+    "toolCategory": "Tool"
+  },
+  "whichLine": {
+    "pageTitle": "ChordWiki とかで行数表示したくなりませんか",
+    "introP1": "こんな感じです！",
+    "introP2": "もし興味があれば、ぜひ試してみてください。",
+    "step1P1": "まず、「Stylus」という便利な拡張機能をダウンロードしてください。",
+    "step1LinkChrome": "Chrome, Edge バージョン",
+    "step1LinkFf": "Firefox バージョン",
+    "step1Note": "💡 <strong>Stylus</strong> とは、ウェブサイトの外観（CSS）をカスタマイズするためのツールです。",
+    "step2P1": "普段利用しているサイト用のスタイルをインストールしてください。",
+    "step2Link1": "ChordWiki での歌詞行数表示",
+    "step2Link2": "U-FRET での歌詞行数表示",
+    "step2Link3": "楽器.me での歌詞行数表示",
+    "step2P2": "リンク先の「Install Style」ボタンをクリックしてください：",
+    "step2SafeNote": "<strong>ご安心ください：</strong>この変更はお使いのブラウザ上でのみ適用されるため、実際の ChordWiki や U-FRET などのウェブサイトには一切影響を及ぼしません。<br><br>バンドメンバーなどと一緒に使いたい場合は、ぜひこのページをシェアして活用してください！",
+    "troubleTitle": "もし使えなくなった場合は？",
+    "troubleP1": "ChordWiki や U-FRET などのウェブサイト側でアップデートがあった場合、このスタイルが正常に動作しなくなる可能性があります。その際は、以下の手順でスタイルを削除してください。",
+    "troubleL1": "該当するウェブサイトを開きます。",
+    "troubleL2": "ブラウザのツールバーから Stylus のアイコンをクリックします。",
+    "troubleL3": "インストールしたスタイルの横にあるボタンをクリックします。",
+    "troubleL4": "「削除」ボタンをクリックします。"
+  },
+  "home": {
+    "title": "演奏ツールへようこそ",
+    "description": "ユーザーのリストを表示するには、ユーザー ID を入力してください：",
+    "placeholder": "例: user123",
+    "submit": "リストへ移動"
+  }
+}
